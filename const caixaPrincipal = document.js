@@ -9,9 +9,76 @@ const textoResultado = document.querySelector(".texto-resultado");
         enunciado:""
         alternativas: [
             {
-                texto:
+                texto:"",
                 afirmacao:
-            }
+            },
+            {
+              texto:"",
+              afirmacao:""
+            },
         ]
+    },
+    {
+      enunciado:""
+      alternativas: [
+        {
+          texto:"",
+          afirmacao:""
+        },
+        {
+          texto:"",
+          afirmacao:""
+        }
+      ]
+    },
+    {
+      enunciado:""
+      alternativas:[
+        {
+          texto:"",
+          afirmacao:""
+        },
+        {
+          texto:"",
+          afirmacao:""
+        }
+      ]
+    },
+    {
+      enunciado:""
+      alternativas: [
+        {
+          texto:"",
+          afirmacao:""
+        },
+        {
+          texto:"",
+          afirmacao:""
+        }
+      ]
+    },
+    {
+      enunciado:""
+      alternativas: [
+        {
+          texto:"",
+          afirmacao:""
+        },
+        {
+          texto:"",
+          afirmacao:""
+        }
+      ]
+    },
+  ];
+
+
+  let atual = 0;
+  let perguntaAtual;
+  let historiaFinal= "";
+
+  function mostraPergunta() {
+    if (atual >= perguntas.length) {
+      mostraResultado();
     }
-  ] 
+  }
