@@ -27,7 +27,7 @@ const perguntas = [
         },
         {
           texto:"A planta é extraída de forma predatória e sem planejamento.",
-          afirmacao:"A extração predatória da planta destrói o ecossistema e causa conflitos com as comunidades, levando a uma perda significativa de biodiversidade e ao empobrecimento das populações locais. Os governos começam a intervir na regulamentação da Flora Lumina."
+          afirmacao:"A extração predatória da planta destrói o ecossistema e causa conflitos com as comunidades, levando a uma perda significativa de biodiversidade e ao empobrecimento das populações locais."
         }
       ]
     },
