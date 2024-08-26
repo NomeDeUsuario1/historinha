@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
   const perguntas= [
     {
-        enunciado:"No coração da floresta do Congo, uma nova espécie de planta herbácea chamada Flora Lumina foi descoberta. Seus galhos emitem uma luz suave e pulsante durante a noite, iluminando a vegetação ao redor. Cientistas notaram que a luz da Flora Lumina tem efeitos extraordinários e a descoberta promete revolucionar a medicina e a agricultura. A comunidade científica enfrenta um dilema sobre como utilizar a Flora Lumina."
+        enunciado:"No coração da floresta do Congo, uma nova espécie de planta herbácea chamada Flora Lumina foi descoberta. Seus galhos emitem uma luz suave e pulsante durante a noite, iluminando a vegetação ao redor. Cientistas notaram que a luz da Flora Lumina tem efeitos extraordinários e a descoberta promete revolucionar a medicina e a agricultura. A comunidade científica enfrenta um dilema sobre como utilizar a Flora Lumina.",
         alternativas: [
             {
                 texto:"Optam por investir no desenvolvimento de tratamentos médicos baseados nos poderes curativos da planta.",
@@ -19,7 +19,7 @@ const textoResultado = document.querySelector(".texto-resultado");
         ]
     },
     {
-      enunciado:"Como a comunidade e os cientistas lidam com a coleta da Flora Lumina?"
+      enunciado:"Como a comunidade e os cientistas lidam com a coleta da Flora Lumina?",
       alternativas: [
         {
           texto:"As comunidades locais se unem aos cientistas para criar um modelo sustentável de coleta.",
@@ -32,7 +32,7 @@ const textoResultado = document.querySelector(".texto-resultado");
       ]
     },
     {
-      enunciado:"Como os governos abordam a regulamentação da Flora Lumina?"
+      enunciado:"Como os governos abordam a regulamentação da Flora Lumina?",
       alternativas:[
         {
           texto:"Implementam uma legislação robusta para a planta.",
@@ -45,7 +45,7 @@ const textoResultado = document.querySelector(".texto-resultado");
       ]
     },
     {
-      enunciado:"Quais são os resultados das pesquisas clínicas com a Flora Lumina?"
+      enunciado:"Quais são os resultados das pesquisas clínicas com a Flora Lumina?",
       alternativas: [
         {
           texto:"A planta proporciona descobertas médicas inovadoras.",
@@ -58,7 +58,7 @@ const textoResultado = document.querySelector(".texto-resultado");
       ]
     },
     {
-      enunciado:"Qual é o impacto global da Flora Lumina sobre a colaboração internacional?"
+      enunciado:"Qual é o impacto global da Flora Lumina sobre a colaboração internacional?",
       alternativas: [
         {
           texto:"Iniciativas internacionais são lançadas para proteger a planta.",
