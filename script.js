@@ -1,10 +1,10 @@
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
-const caixaAlternativas = document.querySelector(".caixa-alternativa");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-  const perguntas= [
+const perguntas = [
     {
         enunciado:"No coração da floresta do Congo, uma nova espécie de planta herbácea chamada Flora Lumina foi descoberta. Seus galhos emitem uma luz suave e pulsante durante a noite, iluminando a vegetação ao redor. Cientistas notaram que a luz da Flora Lumina tem efeitos extraordinários e a descoberta promete revolucionar a medicina e a agricultura. A comunidade científica enfrenta um dilema sobre como utilizar a Flora Lumina.",
         alternativas: [
@@ -73,41 +73,41 @@ const textoResultado = document.querySelector(".texto-resultado");
   ];
 
 
-  let atual = 0;
-  let perguntaAtual;
-  let historiaFinal= "";
+ let atual = 0;
+let perguntaAtual;
+let historiaFinal = "";
 
-  function mostraPergunta() {
+function mostraPergunta() {
     if (atual >= perguntas.length) {
-      mostraResultado();
-      return;
+        mostraResultado();
+        return;
     }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
     mostraAlternativas();
-  }
+}
 
 function mostraAlternativas(){
-  for(const alternativa of perguntaAtual.alternativas) {
-    const botaoAlternativas = document.createElement("button");
-    botaoAlternativas.textContent = alternativa.texto;
-    botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
-    caixaAlternativas.appendChild(botaoAlternativas);
-  }
+    for(const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-  const afirmacoes = opcaoSelecionada.afirmacao;
-  historiaFinal += afirmacoes + " ";
-  atual++;
-  mostraPergunta();
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
+    atual++;
+    mostraPergunta();
 }
 
 function mostraResultado() {
-  caixaPerguntas.textContent = "Em 2049...";
-  textoResultado.textContent = historiaFinal;
-  caixaAlternativas.textContent = "";
+    caixaPerguntas.textContent = "Em 2049...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
 }
 
 mostraPergunta();
