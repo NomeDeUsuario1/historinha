@@ -1,39 +1,43 @@
-:root {
- --bg-color:#ff0000;
- --primary-color: #b3ff00dd;
- --secondary-color: #ff00c8;
- --font: "Nunito Sans", sans-serif;
+:root{
+    --cor-fundo:#26ab3c;
+    --cor-principal:#cdf28d;
+    --cor-secundaria:#f5d742;
+    --cor-destaque:#3d40fc;
+    --cor-texto:##08ff25;
+
 }
 
- body { 
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    fon.t-family: var(--font);
-    margin: 0;
-    padding: 0; 
- }
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
- header, footer {
-    background-color: var(--primary-color);
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
     text-align: center;
-    padding: 1rem;
- }
+    padding: 20px;
+}
 
- h1 {
-    color: var(--bg-color);
-    margin: 0;
- }
- #graficos-container {
-    padding: 2rem;
-    text-align: center;
- }
+h1{
+    color: var(--cor-destaque);
+}
 
-  canvas {
-    max-width: 6900px;
-    margin: 2rem auto;
-    background-color: var(--primary-color);
-  }
-  footer p {
-    color: var(--bg-color);
-  }
+button{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
 
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
